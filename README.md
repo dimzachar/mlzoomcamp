@@ -6,4 +6,4 @@ As part of this challenge, I'll be working on code and projects from the the onl
 in this repository.
 
 I will try to share my progress in [log.md](log.md) and on different social media.
-[Notion]() will be my default journal.
+[Notion](https://www.notion.so/zachar/Data-Science-Journey-7eb439966c3a4512b3de54a246bfef41) will be my default journal.
