@@ -1,3 +1,115 @@
+## Homework
+
+> Note: sometimes your answer doesn't match one of the options exactly. That's fine. 
+Select the option that's closest to your solution.
+
+
+## Dataset
+
+In this homework, we will use Credit Card Data from book "Econometric Analysis".
+
+Here's a wget-able [link](https://raw.githubusercontent.com/alexeygrigorev/datasets/master/AER_credit_card_data.csv):
+
+```bash
+wget https://raw.githubusercontent.com/alexeygrigorev/datasets/master/AER_credit_card_data.csv
+```
+The goal of this homework is to inspect the output of different evaluation metrics by creating a classification model (target column `card`). 
+
+
+## Preparation
+
+* Create the target variable by mapping `yes` to 1 and `no` to 0. 
+* Split the dataset into 3 parts: train/validation/test with 60%/20%/20% distribution. Use `train_test_split` funciton for that with `random_state=1`.
+
+
+## Question 1
+
+ROC AUC could also be used to evaluate feature importance of numerical variables. 
+
+Let's do that
+
+* For each numerical variable, use it as score and compute AUC with the `card` variable.
+* Use the training dataset for that.
+
+If your AUC is < 0.5, invert this variable by putting "-" in front
+
+(e.g. `-df_train['expenditure']`)
+
+AUC can go below 0.5 if the variable is negatively correlated with the target varialble. You can change the direction of the correlation by negating this variable - then negative correlation becomes positive.
+
+Which numerical variable (among the following 4) has the highest AUC?
+
+- `reports`
+- `dependents`
+- `active`
+- `share`
+
+
+## Training the model
+
+From now on, use these columns only:
+
+```
+["reports", "age", "income", "share", "expenditure", "dependents", "months", "majorcards", "active", "owner", "selfemp"]
+```
+
+Apply one-hot-encoding using `DictVectorizer` and train the logistic regression with these parameters:
+
+```
+LogisticRegression(solver='liblinear', C=1.0, max_iter=1000)
+```
+
+
+## Question 2
+
+What's the AUC of this model on the validation dataset? (round to 3 digits)
+
+- 0.615
+- 0.515
+- 0.715
+- 0.995
+
+
+## Question 3
+
+Now let's compute precision and recall for our model.
+
+* Evaluate the model on the validation dataset on all thresholds from 0.0 to 1.0 with step 0.01
+* For each threshold, compute precision and recall
+* Plot them
+
+
+At which threshold precision and recall curves intersect?
+
+* 0.1
+* 0.3
+* 0.6
+* 0.8
+
+
+## Question 4
+
+Precision and recall are conflicting - when one grows, the other goes down. That's why they are often combined into the F1 score - a metrics that takes into account both
+
+This is the formula for computing $F_1$:
+
+$$F_1 = 2 \cdot \cfrac{P \cdot R}{P + R}$$
+
+Where $P$ is precision and $R$ is recall.
+
+Let's compute F1 for all thresholds from 0.0 to 1.0 with increment 0.01 using the validation set
+
+At which threshold F1 is maximal?
+
+- 0.1
+- 0.4
+- 0.6
+- 0.7
+
+
+## Question 5
+
+Use the `KFold` class from Scikit-Learn to evaluate our model on 5 different folds:
 
 ```
 KFold(n_splits=5, shuffle=True, random_state=1)
