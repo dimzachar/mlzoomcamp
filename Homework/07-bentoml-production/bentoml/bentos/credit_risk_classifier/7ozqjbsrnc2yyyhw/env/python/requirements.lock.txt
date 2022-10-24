@@ -1,0 +1,19 @@
+joblib==1.2.0
+    # via scikit-learn
+numpy==1.23.4
+    # via
+    #   scikit-learn
+    #   scipy
+    #   xgboost
+scikit-learn==1.1.2
+    # via sklearn
+scipy==1.9.3
+    # via
+    #   scikit-learn
+    #   xgboost
+sklearn==0.0
+    # via -r C:\Users\dimi\AppData\Local\Temp\tmpapbsp6uzbentoml_bento_credit_risk_classifier\env\python\requirements.txt
+threadpoolctl==3.1.0
+    # via scikit-learn
+xgboost==1.6.2
+    # via -r C:\Users\dimi\AppData\Local\Temp\tmpapbsp6uzbentoml_bento_credit_risk_classifier\env\python\requirements.txt
