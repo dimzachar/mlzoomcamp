@@ -54,7 +54,10 @@ Once it finishes, select jupyter notebook, click new on top right and select ter
 ![sa9](https://github.com/dimzachar/mlzoomcamp/blob/master/Notes/Images/examples-examples-tensorflow-.png)
 
 Write on terminal 
+```bash
 ssh -T git@github.com 
+```
+
 and add your passphrase if any. Congrats you can now use git commands like init, commit, add, clone for github
 
 ![sa10](https://github.com/dimzachar/mlzoomcamp/blob/master/Notes/Images/terminal_tensorflow.png)
