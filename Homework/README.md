@@ -12,6 +12,7 @@
 |05  | [Model Deployment](https://github.com/alexeygrigorev/mlbookcamp-code/blob/master/course-zoomcamp/cohorts/2022/05-deployment/homework.md)              |   10/10/2022   | [Solution](https://github.com/dimzachar/mlzoomcamp/blob/master/Homework/05-deployment)  |
 |06  | [Decision Trees](https://github.com/alexeygrigorev/mlbookcamp-code/blob/master/course-zoomcamp/cohorts/2022/06-trees/homework.md)              |   17/10/2022   | [Solution](https://github.com/dimzachar/mlzoomcamp/blob/master/Homework/06-trees/sol06.ipynb)  |
 |07  | [BentoML](https://github.com/alexeygrigorev/mlbookcamp-code/blob/master/course-zoomcamp/cohorts/2022/07-bento-production/homework.md)              |   24/10/2022   | [Solution](https://github.com/dimzachar/mlzoomcamp/blob/master/Homework/07-bentoml-production)  |
-
+|00  | [Midterm Project](https://github.com/alexeygrigorev/mlbookcamp-code/blob/master/course-zoomcamp/cohorts/2022/07-bento-production/homework.md)              |   10/11/2022   | [Solution](https://github.com/dimzachar/mlzoomcamp/blob/master/Homework/07-bentoml-production)  |
+|08  | [Deep Learning](https://github.com/alexeygrigorev/mlbookcamp-code/blob/master/course-zoomcamp/cohorts/2022/08-deep-learning/homework.md)              |   21/11/2022   | [Solution](https://github.com/dimzachar/mlzoomcamp/blob/master/Homework/08-deep-learning)  |
 
 [dimzachar](https://github.com/dimzachar)
