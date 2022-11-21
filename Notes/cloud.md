@@ -1,7 +1,7 @@
 > [Back to Index](README.md)
 
 
-### Cloud deployment 
+### Cloud deployment with Bentoml
 
 ![logo](https://github.com/dimzachar/mlzoomcamp/blob/master/Notes/Images/awsbento.png)
 
