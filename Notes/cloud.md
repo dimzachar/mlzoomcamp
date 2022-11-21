@@ -3,6 +3,8 @@
 
 ### Cloud deployment 
 
+![logo](https://github.com/dimzachar/mlzoomcamp/blob/master/Notes/Images/awsbento.png)
+
 In order to deploy a service to AWS we push the docker image. Make sure you have an account and install AWS CLI. Instructions can be found [here](https://mlbookcamp.com/article/aws) and the instructions to publish are described [here](https://www.youtube.com/watch?v=aF-TfJXQX-w&list=PL3MmuxUbc_hIhxl5Ji8t4O6lPAOpHaCLR&index=72).
 
 First, create a repo on Amazon Elastic Container Registry (ECR) with an appropriate name
