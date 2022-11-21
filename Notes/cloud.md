@@ -1,6 +1,3 @@
-> [Back to Index](README.md)
-
-
 ### Cloud deployment with BentoML
 
 ![logo](https://github.com/dimzachar/mlzoomcamp/blob/master/Notes/Images/awsbento.png)
