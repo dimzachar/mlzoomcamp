@@ -18,8 +18,9 @@ You will find the push commands there to push the docker image
 Then, tag the latest image which you find on your system with
 
 ```bash
-pipenv run docker images
+docker images
 ```
+
 and push the image.  
 
 Next, go to Elastic Container Service to create a cluster 
@@ -71,6 +72,6 @@ Go to Security groups and add a custom TCP with port 3000 and save
 
 Finally, hit run task.
 
-Once the task is running, you will get a public IP for the deployed service.
+Once the task is running, you will get a public IP for the deployed service like in the video below.
 
 https://user-images.githubusercontent.com/113017737/200716975-7d780f6e-6d6d-4aeb-ba0e-843f34f240de.mp4
