@@ -13,7 +13,7 @@ You will find the push commands there to tag and push the latest docker image
 which you find on your system with
 
 ```bash
-pipenv run docker images
+docker images
 ```
 
 Next, we publish to AWS Lambda.
@@ -41,7 +41,7 @@ Create new method, select POST and hit click. Choose Lambda function as integrat
 
 Hit Test, add a JSON document on request body
 ```bash
- {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pebbleswithquarzite.jpg/1280px-Pebbleswithquarzite.jpg" }
+ {"url": "https://URL.jpg" }
 ```
 
 or other image
